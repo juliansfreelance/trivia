@@ -1,0 +1,323 @@
+@import url('normalize.css');
+@import url('animate.min.css');
+@font-face {
+    font-family: 'apisbold';
+    src: url('../tipografias/apis-bold-webfont.woff2') format('woff2'),
+         url('../tipografias/apis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apisbold_italic';
+    src: url('../tipografias/apis-bolditalic-webfont.woff2') format('woff2'),
+         url('../tipografias/apis-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apislight';
+    src: url('../tipografias/apis-light-webfont.woff2') format('woff2'),
+         url('../tipografias/apis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apismedium';
+    src: url('../tipografias/apis-medium-webfont.woff2') format('woff2'),
+         url('../tipografias/apis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apismedium_italic';
+    src: url('../tipografias/apis-mediumitalic-webfont.woff2') format('woff2'),
+         url('../tipografias/apis-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    overflow: hidden;
+}
+html {
+	background: #134c8c;
+	width: 100vw;
+	height: 100vh;
+}
+body {
+    /* background: #fff; */
+    position: absolute;
+}
+.ancho {
+    width: 100vw;
+    height: calc((10 / 16) * 100vw);
+    left: calc(50% - 50vw);
+    top: calc(50% - (((10 / 16) * 100vw) / 2));
+}
+.alto {
+    height: 100vh;
+    width:calc((16 / 10) * 100vh);
+    top: calc(50% - 50vh);
+    left: calc(50% - (((16 / 10) * 100vh) / 2));
+}
+h1,
+h4,
+p {
+    margin: 0px;
+}
+/* ------------------------------------------------ */
+.home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondo.svg'),#fff;
+}
+.home .logo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/logo.svg');
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home .btnContinuar {
+    position: absolute;
+    right: 2vw;
+    bottom: 1.5vw;
+    width: 15vw;
+    height: 6vw;
+    background: url('../img/btn_continuar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+.home .btnContinuar:hover {
+    filter: drop-shadow(0 0.2vw 0.2vw rgba(2, 95, 235, 0.7));
+}
+/* ------------------------------------------------ */
+.preguntas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:  #fff;
+}
+.preguntas .fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondo_preguntas.svg');
+    background-size: 180%;
+    background-position: 20% 80%;
+    background-repeat: no-repeat;
+}
+.preguntas .logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/logo.svg');
+    background-size: 25%;
+    background-position: center 5%;
+    background-repeat: no-repeat;
+}
+.preguntas .pregunta {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    left: 2.5%;
+    width: 95%;
+    height: 15%;
+    background: url('../img/fondo_pregunta.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.preguntas .pregunta p {
+    width: 85%;
+    margin-left: 7.5%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'apisbold';
+    color: aliceblue;
+}
+.preguntas .opcion {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    background: url('../img/fondo_opcion.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.preguntas .opcion p {
+    width: 85%;
+    margin-left: 11%;
+    font-size: 1.7vw;
+    text-align: left;
+    font-family: 'apismedium';
+    line-height: 1;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+.preguntas .a {
+    top: 40%;
+}
+.preguntas .b {
+    top: 52%;
+}
+.preguntas .c {
+    top: 64%;
+}
+.preguntas .d {
+    top: 76%;
+}
+.preguntas .a:hover,
+.preguntas .b:hover,
+.preguntas .c:hover,
+.preguntas .d:hover {
+    filter: drop-shadow(0 0.2vw 0.2vw rgba(2, 95, 235, 0.7));
+}
+.preguntas .a:before {
+    content: "A";
+}
+.preguntas .b:before {
+    content: "B";
+}
+.preguntas .c:before {
+    content: "C";
+}
+.preguntas .d:before {
+    content: "D";
+}
+.preguntas .a:before,
+.preguntas .b:before,
+.preguntas .c:before,
+.preguntas .d:before {
+    position: absolute;
+    width: 5.8vw;
+    height: 5.8vw;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 5.8vw;
+    font-family: 'apismedium';
+    border-radius: 50%;
+    color: #f0f8ff;
+    /* background: red;
+    opacity: .4; */
+}
+/* ------------------------------------------------ */
+.respuestas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.respuestas .fondo {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: url('../img/fondo_preguntas.svg');
+    background-size: 160%;
+    background-position: 10% bottom;
+    background-repeat: no-repeat;
+}
+.respuestas .referencias {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/referencias.png');
+    background-size: 101%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.respuestas .logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/logo.svg');
+    background-size: 20%;
+    background-position: center 5%;
+    background-repeat: no-repeat;
+}
+.respuestas .respuesta{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    left: 17.2%;
+    width: 65%;
+    height: 38%;
+}
+.respuestas .mal{
+    background: url('../img/perder.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.respuestas .bien {
+    background: url('../img/ganar.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.respuestas .mal article {
+    color: #f0f8ff;
+    text-align: center;
+    line-height: 1;
+    width: 90%;
+    margin-left: 5%;
+    /* background: rgba(0, 0, 0, .5); */
+}
+.respuestas .mal article h1 {
+    font-family: 'apisbold';
+    font-size: 4.5vw;
+    font-weight: normal;
+}
+.respuestas .mal article h4 {
+    font-family: 'apismedium_italic';
+    font-size: 3.4vw;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.respuestas .mal article p {
+    font-family: 'apislight';
+    font-size: 1.8vw;
+    line-height: 1.3;
+    font-weight: normal;
+}.respuestas .mal article p .letra {
+    font-family: 'apisbold';
+}
+.respuestas .btnSiguiente {
+    position: absolute;
+    right: 2vw;
+    bottom: 1.5vw;
+    width: 15vw;
+    height: 6vw;
+    background: url('../img/btn_continuar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.respuestas .btnSiguiente:hover {
+    filter: drop-shadow(0 0.2vw 0.2vw rgba(2, 95, 235, 0.7));
+}

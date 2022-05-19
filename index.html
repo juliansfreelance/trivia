@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes" />
+    <meta name='author' content='Julio Cesar Calderón Garcia - Desarrollador Multimedia' />
+    <title>HaemActive | Trivia</title>
+    <link rel="icon" type="image/png" href="img/icono.png"/>
+    <!-- LIBRERIAS -->
+    <!-- CSS's  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- JS's -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="alto">
+    <section class="home animate__animated animate__fadeIn">
+        <div class="logo animate__animated animate__jackInTheBox animate__delay-1s"></div>
+        <div class="btnContinuar animate__animated animate__bounceInRight animate__delay-1s"></div>
+    </section>
+
+    <section class="preguntas animate__animated animate__fadeIn">
+        <div class="fondo animate__animated animate__fadeInUp animate__delay-1ss"></div>
+        <div class="logo animate__animated animate__fadeIn animate__delay-1s"></div>
+        <div class="opcion a animate__animated animate__fadeInDown animate__delay-2s">
+            <p class="opcionA"></p>
+        </div>
+        <div class="opcion b animate__animated animate__fadeInLeft animate__delay-2s">
+            <p class="opcionB"></p>
+        </div>
+        <div class="opcion c animate__animated animate__fadeInRight animate__delay-2s">
+            <p class="opcionC"></p>
+        </div>
+        <div class="opcion d animate__animated animate__fadeInUp animate__delay-2s">
+            <p class="opcionD"></p>
+        </div>
+        <div class="pregunta animate__animated animate__flipInX animate__delay-2s">
+            <p class="enunciado"></p>
+        </div>
+    </section>
+
+    <section class="respuestas nimate__animated animate__fadeIn">
+        <div class="fondo animate__animated animate__fadeInDown"></div>
+        <div class="logo animate__animated animate__fadeIn animate__slow"></div>
+        <div class="referencias animate__animated animate__fadeInUp"></div>
+        <div class="respuesta bien animate__animated animate__jackInTheBox animate__delay-1s"></div>
+        <div class="respuesta mal animate__animated animate__jackInTheBox animate__delay-1s">
+            <article>
+                <h1>Respuesta incorrecta</h1>
+                <h4>La respuesta correcta es </h4>
+                <p><span class="letra"></span>: <span class="texto"></span></p>
+            </article>
+        </div>
+        <div class="btnSiguiente animate__animated animate__bounceInRight animate__delay-2s"></div>
+    </section>
+</body>
+</html>
